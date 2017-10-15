@@ -3,9 +3,9 @@ import random
 import pickle
 from nltk.corpus import movie_reviews
 from nltk.classify.scikitlearn import SklearnClassifier
-from sklearn.naive_bayes import MultinomialNB, GaussianNB, BernoulliNB
-from sklearn.linear_model import LogisticRegression, SGDClassifier
-from sklearn.svm import SVC, LinearSVC, NuSVC
+#from sklearn.naive_bayes import MultinomialNB, GaussianNB, BernoulliNB
+#from sklearn.linear_model import LogisticRegression, SGDClassifier
+#from sklearn.svm import SVC, LinearSVC, NuSVC
 
 from nltk.classify import ClassifierI
 from statistics import mode
@@ -71,23 +71,23 @@ feature_set = [(find_features(rev), catergory) for (rev, catergory) in documents
 training = feature_set
 
 classifier = nltk.NaiveBayesClassifier.train(training)
-MNB_Classifier = SklearnClassifier(MultinomialNB()).train(training)
-BNB_Classifier = SklearnClassifier(BernoulliNB()).train(training)
-LR_Classifier = SklearnClassifier(LogisticRegression()).train(training)
-SGD_Classifier = SklearnClassifier(SGDClassifier()).train(training)
-LSVC_Classifier = SklearnClassifier(LinearSVC()).train(training)
-NSVC_Classifier = SklearnClassifier(NuSVC()).train(training)
+# MNB_Classifier = SklearnClassifier(MultinomialNB()).train(training)
+# BNB_Classifier = SklearnClassifier(BernoulliNB()).train(training)
+# LR_Classifier = SklearnClassifier(LogisticRegression()).train(training)
+# SGD_Classifier = SklearnClassifier(SGDClassifier()).train(training)
+# LSVC_Classifier = SklearnClassifier(LinearSVC()).train(training)
+# NSVC_Classifier = SklearnClassifier(NuSVC()).train(training)
 
 classifier.show_most_informative_features(100)
-voted_classifier = VoteClassifier(classifier,MNB_Classifier,BNB_Classifier,LR_Classifier,SGD_Classifier,LSVC_Classifier,NSVC_Classifier)
+#voted_classifier = VoteClassifier(classifier,MNB_Classifier,BNB_Classifier,LR_Classifier,SGD_Classifier,LSVC_Classifier,NSVC_Classifier)
 
 def guess(url):
 	a = Article(url = 'https://www.newscientist.com/article/2150282-online-school-wants-to-train-arts-students-in-cybersecurity/', language = 'en')
 	a.download()
 	a.parse()
 	a_features = find_features(a.text)
-	answer = voted_classifier.classify(a_features)
-	return a ,answer, int(voted_classifier.confidence(a_features)*100)
+	answer = classifier.classify(a_features)
+	return a ,answer
 
 def update(a, answer):
 	if answer is 'pos':
@@ -102,7 +102,7 @@ def update(a, answer):
 	tech_docs_f.close()
 
 
-t,b,_ = guess('https://www.theverge.com/2017/9/5/16254300/pixelmator-pro-features-launch-date')
+t,b= guess('https://www.wired.com/story/googles-learning-software-learns-to-write-learning-software/')
 if b is 'neg':
 	print("WRONG!")
 	update(t,b)
