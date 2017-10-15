@@ -141,6 +141,7 @@ http://www.foxnews.com/tech/2017/10/12/ausa-2017-this-military-atv-can-think-and
 http://www.foxnews.com/tech/2017/10/12/millions-pornhub-users-may-have-been-spied-on-following-hack.html
 http://www.foxnews.com/tech/2017/10/12/facebook-google-twitter-sued-by-family-american-killed-in-nice-terror-attack.html
 http://www.foxnews.com/tech/2017/10/12/incredible-viral-video-shows-orcas-hunt-down-minke-whale.html
+https://www.tomsguide.com/us/bitdefender-antivirus-mac,review-2348.html
 http://www.foxnews.com/tech/2017/10/12/genetically-optimized-corn-is-more-nutritious-could-revolutionize-agriculture.html
 http://money.cnn.com/2017/10/13/technology/business/samsung-earnings-note-smartphone/index.html
 http://money.cnn.com/2017/10/13/technology/facebook-food-delivery/index.html
@@ -149,6 +150,7 @@ http://money.cnn.com/2017/10/12/technology/delta-app-check-in/index.html
 http://money.cnn.com/2017/10/11/technology/oculus-event-facebook-zuckerberg/index.html
 http://money.cnn.com/2017/10/13/technology/women-boycott-twitter-rose-mcgowan/index.html
 http://money.cnn.com/2017/10/13/technology/business/samsung-earnings-note-smartphone/index.html
+https://www.tomsguide.com/us/lookout-mobile-security,review-2099.html
 https://www.sciencedaily.com/releases/2017/10/171012111445.htm
 https://www.sciencedaily.com/releases/2017/10/171010133912.htm
 https://www.msn.com/en-us/news/technology/how-sputnik-launched-an-era-of-technological-fragility/ar-AAsY42u
@@ -161,4 +163,12 @@ https://www.cnet.com/news/bug-bounty-hunters-can-make-big-bucks-with-the-right-h
 https://www.cnet.com/news/i-shot-zombies-while-wearing-a-wireless-vr-headset-in-a-shopping-mall/
 https://www.elsevier.com/authors/author-services/research-elements/software-articles
 https://www.newscientist.com/article/2150282-online-school-wants-to-train-arts-students-in-cybersecurity/
-https://techcrunch.com/2017/10/13/researchers-propose-an-open-internet-of-water-tracking-use-quality-and-costs/		
+https://techcrunch.com/2017/10/13/researchers-propose-an-open-internet-of-water-tracking-use-quality-and-costs/
+https://www.tomsguide.com/us/best-vpn,review-4292.html
+https://www.tomsguide.com/us/pictures-story/458-playstation-emulators-for-desktop-pc.html
+https://www.tomsguide.com/us/pictures-story/283-best-google-chrome-extensions.html
+https://www.pcworld.com/article/2082305/software/best-free-software-for-pc.html
+http://www.telegraph.co.uk/technology/0/ios-11-best-features-apples-new-software/
+https://electrek.co/2017/10/12/tesla-new-software-update-convenience-features/
+http://www.openculture.com/2017/10/download-new-storyboarding-software-thats-free-open-source.html
+https://www.nytimes.com/2017/07/19/technology/personaltech/shopping-for-new-software.html
