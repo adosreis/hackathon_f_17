@@ -82,11 +82,13 @@ classifier.show_most_informative_features(100)
 #voted_classifier = VoteClassifier(classifier,MNB_Classifier,BNB_Classifier,LR_Classifier,SGD_Classifier,LSVC_Classifier,NSVC_Classifier)
 
 def guess(url):
-	a = Article(url = 'https://www.newscientist.com/article/2150282-online-school-wants-to-train-arts-students-in-cybersecurity/', language = 'en')
+	a = Article(url, language = 'en')
 	a.download()
 	a.parse()
 	a_features = find_features(a.text)
+	print(a_features)
 	answer = classifier.classify(a_features)
+	print(answer)
 	return a ,answer
 
 def update(a, answer):
@@ -100,9 +102,3 @@ def update(a, answer):
 	nontech_docs_f = open('nontechdocs.pickle','wb')
 	pickle.dump(non_tech_docs,nontech_docs_f)
 	tech_docs_f.close()
-
-
-t,b= guess('https://www.wired.com/story/googles-learning-software-learns-to-write-learning-software/')
-if b is 'neg':
-	print("WRONG!")
-	update(t,b)
