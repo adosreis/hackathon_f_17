@@ -1,8 +1,13 @@
 import urllib.request
 from bs4 import BeautifulSoup
 
-page = urllib.request.urlopen('https://stackoverflow.com/questions/14694482/converting-html-to-text-with-python')
+page = urllib.request.urlopen('https://www.wired.com/story/have-a-high-tech-halloween-with-your-own-haunted-smart-home/')
 x = (page.read())
 
-soup = BeautifulSoup(x)
-print(soup.get_text('\n'))
+soup = BeautifulSoup(x, "html.parser")
+words = []
+for string in soup.strings:
+	if(len(string) < 100):
+		if not any(x in string for x in '<>/|\}{^*&%\\'):
+				words.append(string)
+print(words)
