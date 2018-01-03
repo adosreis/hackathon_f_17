@@ -5,6 +5,6 @@ nltk
 python
 
 Created by:
-Andrew Dos Reis
-Imrhan Khan Shajahan
-Rakshaa Ravishankar
+Andrew Dos Reis,
+Imrhan Khan Shajahan,
+and Rakshaa Ravishankar
